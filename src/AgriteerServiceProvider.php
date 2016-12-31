@@ -13,7 +13,7 @@ namespace Ibonly\Agriteer;
 
 use Illuminate\Support\ServiceProvider;
 
-class EtextMailServiceProvider extends ServiceProvider
+class AgriteerServiceProvider extends ServiceProvider
 {
     /*
     * Indicates if loading of the provider is deferred.
@@ -21,13 +21,6 @@ class EtextMailServiceProvider extends ServiceProvider
     * @var bool
     */
     protected $defer = false;
-
-    /**
-    * Publishes all the config file this package needs to function
-    */
-    public function boot()
-    {
-    }
 
     /**
     * Register the application services.
@@ -43,6 +36,6 @@ class EtextMailServiceProvider extends ServiceProvider
     */
     public function provides()
     {
-        return ['laravel-etextmail'];
+        return ['agriteer-agriteer'];
     }
 }
